@@ -104,5 +104,5 @@ all_team_goals_pyspark = spark.createDataFrame(all_team_goals_pandas)
 all_team_goals_pyspark_ordered = all_team_goals_pyspark.orderBy(desc('Goals'))
 all_team_goals_pyspark_ordered.show()
 
-# print('Câu 3.10')
+print('Câu 3.10')
 
