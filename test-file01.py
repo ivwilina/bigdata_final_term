@@ -3,7 +3,7 @@ import pandas
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import desc, year, sum, lit, when, min, avg, max, col, split, explode, count, lower
 spark = SparkSession.builder.appName("test").getOrCreate()
-data_raw = spark.read.format('csv').option('header','true').load('D:/Learning/python/bigdata_final_term/Spark_Premium_2020_2021.csv')
+data_raw = spark.read.format('csv').option('header','true').load('D:/Coding Workspace/bigdata_final_term/Spark_Premium_2020_2021.csv')
 
 data = data_raw.select('Date','Time','HomeTeam','AwayTeam','FTHG','FTAG','FTR','HTHG','HTAG','HTR','Referee')
 
